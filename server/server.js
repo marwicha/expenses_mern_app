@@ -7,6 +7,7 @@ var app = express();
 var bodyParser = require('body-parser');
 // for database mongo
 var mongoose = require('mongoose');
+var Expense = require('./models/Expense');
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '../client'));
