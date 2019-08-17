@@ -70,6 +70,18 @@ handleSelectChange(e) {
       }
     }
 
+    handleTextChange(e) {
+      if (e.target.name === "description") {
+        this.setState({
+          description: e.target.value
+        });
+      }
+  if (e.target.name === "amount") {
+        this.setState({
+          amount: e.target.value
+        });
+      }
+    }
 
 onClick(e) {
       this.insertNewExpense(this);
