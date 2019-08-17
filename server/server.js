@@ -1,12 +1,12 @@
-var express = require('express');
-var router = require('./routes/routes.js')
-var path = require('path');
-var app = express();
+const express = require('express');
+const router = require('./routes/routes.js')
+const path = require('path');
+const app = express();
 
 // for database mongo
-var bodyParser = require('body-parser');
+const bodyParser = require('body-parser');
 // for database mongo
-var mongoose = require('mongoose');
+const mongoose = require('mongoose');
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '../client'));
